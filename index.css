@@ -1,0 +1,337 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background:url("https://i.pinimg.com/1200x/89/2b/60/892b60d11eb60cfdb951e156f242e233.jpg")
+}
+
+/* ================= Navbar Styling ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+}
+
+.logo h2 {
+    color: goldenrod;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: goldenrod;
+}
+
+/* Navbar Buttons (Login / Sign Up) */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.login-nav {
+    color:goldenrod;
+    border: 1.5px solid goldenrod;
+    background-color: transparent;
+}
+
+.login-nav:hover {
+    background-color: #f0f8ff;
+}
+
+.signup-nav {
+    color:goldenrod;
+    border: 1.5px solid goldenrod;
+}
+
+.signup-nav:hover {
+    background-color: #f0f8ff;
+}
+
+/* ================= Hero / Body Section ================= */
+.hero-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(15px);
+    background-color: transparent;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Get Started Button */
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 35px;
+    background-color: #28a745; /* Green color to stand out */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+/* Footer Base Styles */
+footer {
+  background-color: #1f2937; /* Clean dark gray background */
+  color: #f3f4f6; /* Light text for good contrast */
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: auto; /* Helps push footer to the bottom */
+}
+
+/* Flexbox Container for Layout */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Individual Sections */
+.footer-info, .footer-links, .footer-contact {
+  flex: 1;
+  min-width: 250px; /* Prevents them from getting too small */
+  text-align: center;
+}
+
+/* Links Styling */
+.footer-links a {
+  color: #60a5fa; /* Nice subtle blue */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #93c5fd; /* Lighter blue on hover */
+}
+
+/* Address & Contact Styling */
+.footer-contact address {
+  font-style: normal; /* Removes the default italic style */
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #93c5fd;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Footer Base Styles */
+footer {
+  background-color: #1f2937; /* Clean dark gray background */
+  color: #f3f4f6; /* Light text for good contrast */
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: auto; /* Helps push footer to the bottom */
+}
+
+/* Flexbox Container for Layout */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Individual Sections */
+.footer-info, .footer-links, .footer-contact {
+  flex: 1;
+  min-width: 250px; /* Prevents them from getting too small */
+  text-align: center;
+}
+
+/* Links Styling */
+.footer-links a {
+  color: #60a5fa; /* Nice subtle blue */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #93c5fd; /* Lighter blue on hover */
+}
+
+/* Address & Contact Styling */
+.footer-contact address {
+  font-style: normal; /* Removes the default italic style */
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #93c5fd;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Footer Base Styles */
+footer {
+  background-color: #1f2937; /* Clean dark gray background */
+  color: #f3f4f6; /* Light text for good contrast */
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: auto; /* Helps push footer to the bottom */
+}
+
+/* Flexbox Container for Layout */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Individual Sections */
+.footer-info, .footer-links, .footer-contact {
+  flex: 1;
+  min-width: 250px; /* Prevents them from getting too small */
+  text-align: center;
+}
+
+/* Links Styling */
+.footer-links a {
+  color: #60a5fa; /* Nice subtle blue */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #93c5fd; /* Lighter blue on hover */
+}
+
+/* Address & Contact Styling */
+.footer-contact address {
+  font-style: normal; /* Removes the default italic style */
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #93c5fd;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

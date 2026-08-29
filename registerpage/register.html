@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>register</title>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body> 
+        <p id="message" style="color:rgb(170, 168, 17); text-align:right; margin-right: 20px; font-size:20px;"></p>
+       <form id="registerForm">
+            <h1>REGISTER</h1>
+            <label>User</label>
+            <input type="text" id="username" placeholder="username 👤">
+            <label>Email</label>
+            <input type="email" id="email"placeholder="email 📧" required>
+            <label>Phone no</label>
+            <input type="text" id="phone"placeholder="+91 9876543457 📞" required>
+             <label> password</label>
+            <input type="password" id="password"placeholder="password 🔒" required>
+            <button>REGISTER</button>
+            <h4>Already have an account?</h4>
+            <a href="/loginpage/login.html">login</a>
+        </form>
+        
+    </body>
+    <script>
+            function registerSuccess() 
+            {
+                var messageElement = document.getElementById("message");
+                messageElement.textContent = "Registration successful!";
+                return false; // Prevent form submission for demonstration purposes
+            }
+    </script>
+    <script src="register.js"></script>
+
+</html>
