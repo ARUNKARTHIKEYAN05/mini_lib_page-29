@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>register</title>
         <link rel="stylesheet" href="register.css">
     </head>
     <body> 
         <p id="message" style="color:rgb(170, 168, 17); text-align:right; margin-right: 20px; font-size:20px;"></p>
-       <form id="registerForm">
+    <form id="registerForm">
             <h1>REGISTER</h1>
             <label>User</label>
-            <input type="text" id="username" placeholder="username 👤">
+            <input type="text" id="username" placeholder="username" required>
             <label>Email</label>
             <input type="email" id="email"placeholder="email 📧" required>
             <label>Phone no</label>
@@ -22,14 +24,6 @@
         </form>
         
     </body>
-    <script>
-            function registerSuccess() 
-            {
-                var messageElement = document.getElementById("message");
-                messageElement.textContent = "Registration successful!";
-                return false; // Prevent form submission for demonstration purposes
-            }
-    </script>
     <script src="register.js"></script>
 
 </html>
