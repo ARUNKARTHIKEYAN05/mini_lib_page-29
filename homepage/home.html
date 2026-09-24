@@ -1,156 +1,848 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Online Library - Home</title>
+
     <link rel="stylesheet" href="home.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
 </head>
+
+
 <body>
 
-    <!-- Header & Navigation Bar -->
-    <header class="navbar">
-        <div class="logo">
-            <h2>📚 ReadHub</h2>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#books">Categories</a></li>
-                <li><a href="#about">About Us</a></li>
-            </ul>
-            <div class="nav-buttons">
-                <!-- Link these to your login and register pages -->
-                <a href="../index.html" class="nav-btn login-nav">Log-out</a>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Body / Hero Section -->
-    <main class="hero-section">
-        <div class="hero-content">
-            <h1>Explore an Infinite World of Books</h1>
-            <p>Access thousands of e-books, audiobooks, and study materials anytime, anywhere. Your digital library awaits!</p>
+<!-- =========================================
+     HEADER / NAVBAR
+========================================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <h2>📚 ReadHub</h2>
+
+    </div>
+
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="home.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#books">
+                    Categories
+                </a>
+            </li>
+
+            <li>
+                <a href="#about">
+                    About Us
+                </a>
+            </li>
+
+        </ul>
+
+
+        <div class="nav-buttons">
+
+            <a
+                href="../index.html"
+                class="nav-btn login-nav"
+            >
+                Log-out
+            </a>
+
         </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================
+     HERO SECTION
+========================================= -->
+
+<main class="hero-section">
+
+    <div class="hero-content">
+
+        <h1>
+            Explore an Infinite World of Books
+        </h1>
+
+        <p>
+            Access thousands of e-books, audiobooks,
+            and study materials anytime, anywhere.
+            Your digital library awaits!
+        </p>
+
+    </div>
+
 </main>
 
-<!-- BOOTSTRAP BOOK CARDS -->
-<section class="container my-5" id="books">
-
-    <h2 class="text-center mb-4">Popular Books</h2>
-
-    <div class="row g-4 book-grid">
-
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="https://i.pinimg.com/736x/d5/89/46/d58946256b1c8957eb371858cd60a929.jpg" class="card-img-top" alt="Book 1">
-
-                <div class="card-body">
-                    <h5 class="card-title">The Power of Knowledge</h5>
-                    <p class="card-text">
-                        Learn new ideas and improve your knowledge.
-                    </p>
-                    <a href="https://pdfobject.com/pdf/sample.pdf" class="btn btn-primary">Read Book</a>
-                </div>
-            </div>
-        </div>
 
 
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="https://i.pinimg.com/736x/e9/62/00/e96200444914dd2bd30f4c694f7e006d.jpg" class="card-img-top" alt="Book 2">
+<!-- =========================================
+     SEARCH / FILTER / ADD BOOK
+========================================= -->
 
-                <div class="card-body">
-                    <h5 class="card-title">Learn JavaScript</h5>
-                    <p class="card-text">
-                        Learn JavaScript from beginner level.
-                    </p>
-                    <a href="https://pdfobject.com/pdf/sample.pdf" class="btn btn-primary">Read Book</a>
-                </div>
-            </div>
-        </div>
+<section
+    class="book-tools"
+    aria-label="Book search and filters"
+>
 
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="https://i.pinimg.com/736x/6e/7d/70/6e7d7053b49693e17a55366b3eba09ad.jpg" class="card-img-top" alt="Book 3">
+    <div class="book-actions">
 
-                <div class="card-body">
-                    <h5 class="card-title">Web Development</h5>
-                    <p class="card-text">
-                        Learn HTML, CSS and Bootstrap.
-                    </p>
-                    <a href="https://www.ses.unam.mx/curso2010/pdf/M1S2-Kogan.pdf" class="btn btn-primary">Read Book</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Book 4">
+        <!-- Search -->
 
-                <div class="card-body">
-                    <h5 class="card-title">Mastering Python</h5>
-                    <p class="card-text">
-                        Build practical programs and strengthen your coding skills.
-                    </p>
-                    <a href="https://pdfobject.com/pdf/sample.pdf" class="btn btn-primary">Read Book</a>
-                </div>
-            </div>
-        </div>
+        <label
+            class="search-box"
+            for="bookSearch"
+        >
 
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Book 5">
+            <span aria-hidden="true">
+                ⌕
+            </span>
 
-                <div class="card-body">
-                    <h5 class="card-title">Data Science Basics</h5>
-                    <p class="card-text">
-                        Discover data, patterns, and the fundamentals of analytics.
-                    </p>
-                    <a href="https://pdfobject.com/pdf/sample.pdf" class="btn btn-primary">Read Book</a>
-                </div>
-            </div>
-        </div>
+            <input
+                type="search"
+                id="bookSearch"
+                placeholder="Search books..."
+                autocomplete="off"
+            >
 
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Book 6">
+        </label>
 
-                <div class="card-body">
-                    <h5 class="card-title">Creative Design Guide</h5>
-                    <p class="card-text">
-                        Learn the principles behind clear and engaging digital design.
-                    </p>
-                    <a href="https://pdfobject.com/pdf/sample.pdf" class="btn btn-primary">Read Book</a>
-                </div>
-            </div>
-        </div>
+
+
+        <!-- Category Filter -->
+
+        <label
+            class="filter-box"
+            for="categoryFilter"
+        >
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All categories
+                </option>
+
+                <option value="education">
+                    Education
+                </option>
+
+                <option value="programming">
+                    Programming
+                </option>
+
+                <option value="technology">
+                    Technology
+                </option>
+
+                <option value="science">
+                    Science
+                </option>
+
+                <option value="design">
+                    Design
+                </option>
+
+                <option value="novel">
+                    Novel
+                </option>
+
+                <option value="romance">
+                    Romance
+                </option>
+
+            </select>
+
+        </label>
+
 
     </div>
 
 </section>
 
 
-        
-   <footer>
-  <div class="footer-container">
-    
-    <!-- About / Copyright Section -->
-    <div class="footer-info" id="about">
-      <p>&copy; 2026 Your Website Name. All rights reserved.</p>
+
+<!-- =========================================
+     BOOK MANAGEMENT
+========================================= -->
+
+<section class="book-management container my-5">
+
+
+    <!-- Management Header -->
+
+    <div class="management-header">
+
+        <div>
+
+            <h2>
+                Book Management
+            </h2>
+
+            <p>
+                Add, edit, view and delete your books
+            </p>
+
+        </div>
+
+
+        <button
+            class="management-add-btn"
+            onclick="openBookForm()"
+        >
+            + Add New Book
+        </button>
+
     </div>
 
-    <!-- Contact Section (Using your address tag!) -->
-    <div class="footer-contact">
-      <address>
-        Email: <a href="mailto:contact@example.com">contact@example.com</a><br>
-        Phone: <a href="tel:+919876543210">+91 98765 43210</a>
-      </address>
+
+
+    <!-- =====================================
+         ADD / EDIT FORM POPUP
+    ====================================== -->
+
+    <div
+        class="popup-overlay"
+        id="popupOverlay"
+        onclick="closePopupOutside(event)"
+    >
+
+        <div
+            class="book-form-box"
+            id="bookFormBox"
+        >
+
+            <!-- Close Button -->
+
+            <button
+                type="button"
+                class="close-form-btn"
+                onclick="closeBookForm()"
+            >
+                &times;
+            </button>
+
+
+            <h3 id="bookFormTitle">
+                Add New Book
+            </h3>
+
+
+            <form id="bookForm">
+
+
+                <!-- Hidden Edit Index -->
+
+                <input
+                    type="hidden"
+                    id="editBookIndex"
+                >
+
+
+
+                <!-- Book ID -->
+
+                <div class="form-group">
+
+                    <label for="bookid">
+                        Book ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="bookid"
+                        placeholder="Ex, BOOK-001"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Book Name -->
+
+                <div class="form-group">
+
+                    <label for="bookName">
+                        Book Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="bookName"
+                        placeholder="Enter book name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Author -->
+
+                <div class="form-group">
+
+                    <label for="bookAuthor">
+                        Author
+                    </label>
+
+                    <input
+                        type="text"
+                        id="bookAuthor"
+                        placeholder="Enter author name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Category -->
+
+                <div class="form-group">
+
+                    <label for="bookCategory">
+                        Category
+                    </label>
+
+                    <select
+                        id="bookCategory"
+                        required
+                    >
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option value="education">
+                            Education
+                        </option>
+
+                        <option value="programming">
+                            Programming
+                        </option>
+
+                        <option value="technology">
+                            Technology
+                        </option>
+
+                        <option value="science">
+                            Science
+                        </option>
+
+                        <option value="novel">
+                            Novel
+                        </option>
+
+                        <option value="romance">
+                            Romance
+                        </option>
+
+                        <option value="design">
+                            Design
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Book URL -->
+
+                <div class="form-group">
+
+                    <label for="bookUrl">
+                        Book / PDF URL
+                    </label>
+
+                    <input
+                        type="url"
+                        id="bookUrl"
+                        placeholder="https://example.com/book.pdf"
+                    >
+
+                </div>
+
+
+
+                <!-- Description -->
+
+                <div class="form-group">
+
+                    <label for="bookDescription">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="bookDescription"
+                        rows="4"
+                        placeholder="Enter book description"
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- Buttons -->
+
+                <div class="form-buttons">
+
+                    <button
+                        type="submit"
+                        class="save-book-btn"
+                    >
+                        Save Book
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="cancel-book-btn"
+                        onclick="closeBookForm()"
+                    >
+                        Cancel
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
     </div>
 
-  </div>
+
+
+    <!-- =====================================
+         BOOK TABLE
+    ====================================== -->
+
+    <div class="book-table-box">
+
+        <h3>
+            All Books
+        </h3>
+
+
+        <div class="table-responsive">
+
+            <table class="book-management-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            S.no
+                        </th>
+
+                        <th>
+                            Book ID
+                        </th>
+
+                        <th>
+                            Book Name
+                        </th>
+
+                        <th>
+                            Author
+                        </th>
+
+                        <th>
+                            Category
+                        </th>
+
+                        <th>
+                            View Book
+                        </th>
+
+                        <th>
+                            Actions
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="managementBookList">
+
+                </tbody>
+
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================
+     POPULAR BOOKS
+========================================= -->
+
+<section
+    class="container my-5"
+    id="books"
+>
+
+    <h2 class="text-center mb-4">
+        Popular Books
+    </h2>
+
+
+    <div class="row g-4 book-grid">
+
+
+        <!-- BOOK 1 -->
+
+        <div class="col-md-4">
+
+            <div
+                class="card h-100"
+                data-category="education"
+            >
+
+                <img
+                    src="https://i.pinimg.com/736x/d5/89/46/d58946256b1c8957eb371858cd60a929.jpg"
+                    class="card-img-top"
+                    alt="Book 1"
+                >
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        The Power of Knowledge
+                    </h5>
+
+                    <p class="card-text">
+                        Learn new ideas and improve
+                        your knowledge.
+                    </p>
+
+                    <a
+                        href="https://pdfobject.com/pdf/sample.pdf"
+                        class="btn btn-primary"
+                        target="_blank"
+                    >
+                        Read Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BOOK 2 -->
+
+        <div class="col-md-4">
+
+            <div
+                class="card h-100"
+                data-category="programming"
+            >
+
+                <img
+                    src="https://i.pinimg.com/736x/e9/62/00/e96200444914dd2bd30f4c694f7e006d.jpg"
+                    class="card-img-top"
+                    alt="Book 2"
+                >
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Learn JavaScript
+                    </h5>
+
+                    <p class="card-text">
+                        Learn JavaScript from beginner
+                        level.
+                    </p>
+
+                    <a
+                        href="https://pdfobject.com/pdf/sample.pdf"
+                        class="btn btn-primary"
+                        target="_blank"
+                    >
+                        Read Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BOOK 3 -->
+
+        <div class="col-md-4">
+
+            <div
+                class="card h-100"
+                data-category="technology"
+            >
+
+                <img
+                    src="https://i.pinimg.com/736x/6e/7d/70/6e7d7053b49693e17a55366b3eba09ad.jpg"
+                    class="card-img-top"
+                    alt="Book 3"
+                >
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Web Development
+                    </h5>
+
+                    <p class="card-text">
+                        Learn HTML, CSS and Bootstrap.
+                    </p>
+
+                    <a
+                        href="https://www.ses.unam.mx/curso2010/pdf/M1S2-Kogan.pdf"
+                        class="btn btn-primary"
+                        target="_blank"
+                    >
+                        Read Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BOOK 4 -->
+
+        <div class="col-md-4">
+
+            <div
+                class="card h-100"
+                data-category="programming"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                    class="card-img-top"
+                    alt="Book 4"
+                >
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Mastering Python
+                    </h5>
+
+                    <p class="card-text">
+                        Build practical programs and
+                        strengthen your coding skills.
+                    </p>
+
+                    <a
+                        href="https://pdfobject.com/pdf/sample.pdf"
+                        class="btn btn-primary"
+                        target="_blank"
+                    >
+                        Read Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BOOK 5 -->
+
+        <div class="col-md-4">
+
+            <div
+                class="card h-100"
+                data-category="science"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                    class="card-img-top"
+                    alt="Book 5"
+                >
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Data Science Basics
+                    </h5>
+
+                    <p class="card-text">
+                        Discover data, patterns, and
+                        the fundamentals of analytics.
+                    </p>
+
+                    <a
+                        href="https://pdfobject.com/pdf/sample.pdf"
+                        class="btn btn-primary"
+                        target="_blank"
+                    >
+                        Read Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BOOK 6 -->
+
+        <div class="col-md-4">
+
+            <div
+                class="card h-100"
+                data-category="design"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80"
+                    class="card-img-top"
+                    alt="Book 6"
+                >
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Creative Design Guide
+                    </h5>
+
+                    <p class="card-text">
+                        Learn the principles behind clear
+                        and engaging digital design.
+                    </p>
+
+                    <a
+                        href="https://pdfobject.com/pdf/sample.pdf"
+                        class="btn btn-primary"
+                        target="_blank"
+                    >
+                        Read Book
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div
+            class="footer-info"
+            id="about"
+        >
+
+            <p>
+                &copy; 2026 ReadHub.
+                All rights reserved.
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-contact">
+
+            <address>
+
+                Email:
+                <a href="mailto:contact@example.com">
+                    contact@example.com
+                </a>
+
+                <br>
+
+                Phone:
+                <a href="tel:+919876543210">
+                    +91 98765 43210
+                </a>
+
+            </address>
+
+        </div>
+
+
+    </div>
+
 </footer>
 
+
+
+<!-- JAVASCRIPT -->
+
+<script src="home.js"></script>
+
+
 </body>
+
 </html>
